@@ -1,0 +1,29 @@
+<!doctype html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+<body>
+    <table id="data" class="table table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Message</th>
+            <th>Message Count</th>
+            <th>Server</th>
+            <th>Application</th>
+            <th>Added At</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for sd in data %} <!-- šādi tam nevajag būt bet tas bija lai pārbaudītu -->
+            <tr>
+                <td>{{ sd[0] }}</td>
+                <td>{{ sd[1] }}</td>
+                <td>{{ sd[2] }}</td>
+                <td>{{ sd[3] }}</td>
+                <td>{{ sd[4] }}</td>
+                <td>{{ sd[5] }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</body>
